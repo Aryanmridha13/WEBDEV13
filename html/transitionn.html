@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 100%;
+        height: 100vh;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        /* background-color: linear-gradient(rgb(70)); */
+        background-color: blueviolet;
+      }
+      .sub-main {
+        width: 80%;
+        height: 80vh;
+        border: 2px solid green;
+        display: flex;
+
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 30px;
+        background-color: green;
+      }
+      .items {
+        width: 200px;
+        height: 200px;
+        border: 2px solid yellow;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 40px;
+        background-color: aqua;
+        box-shadow:
+          20px 20px 10px red,
+          -20px -20px 10px rgb(165, 7, 105);
+           transition: transform 0.3s ease;
+
+      }
+      /* rotate */
+      .rotate > .items:nth-child(1):hover {
+        transform: rotateX(180deg);
+      }
+      .rotate > .items:nth-child(2):hover {
+        transform: rotateY(270deg);
+      }
+      .rotate > .items:nth-child(4):hover {
+        transform: rotateX(90deg) rotateY(240deg) rotateZ(180deg);
+      }
+
+
+
+      /* SCALE  => X and Y*/
+      .scale>.items:nth-child(1):hover{
+        transform: scale(1.4);
+      }
+      .scale>.items:nth-child(2):hover{
+        transform: scale(1.4);
+      }
+      .scale>.items:nth-child(3):hover{
+        transform: scale(0.6);
+      }
+      .scale>.items:nth-child(4):hover{
+        transform: scale(1.8);
+      }
+
+/* SKEW =>  */
+.skew>.items:nth-child(1):hover{
+    transform: skewX(20deg);
+}
+.skew>.items:nth-child(2):hover{
+    transform: skewY(20deg);
+}
+
+.skew>.items:nth-child(4):hover{
+    transform: skew(20deg, 10deg);
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>ROTATE</h1>
+      <div class="sub-main rotate">
+        <div class="items">X</div>
+        <div class="items">Y</div>
+        <div class="items">Z</div>
+        <div class="items">X,Y,Z</div>
+    </div>
+
+     <h1>SCALE</h1>
+      <div class="sub-main scale">
+        <div class="items">X</div>
+        <div class="items">Y</div>
+        <div class="items">X,Y</div>
+        <div class="items">Z,X</div>
+      </div>
+
+       <h1>SKEW</h1>
+      <div class="sub-main skew">
+        <div class="items">X</div>
+        <div class="items">Y</div>
+        <div class="items">X,Y</div>
+        <div class="items">Z,X</div>
+      </div>
+  </body>
+</html>
