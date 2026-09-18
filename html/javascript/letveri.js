@@ -48,7 +48,7 @@ console.log(f);
 nwe()
 
 
-//  declare a let variable inside the function  and accesing outside the block is not possible 
+//  declare a let variable inside the function and accesing outside the block is not possible 
 
 // function nwe1(){
 //     let g = 'newspider'

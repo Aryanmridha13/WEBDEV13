@@ -64,3 +64,5 @@ var place1 = 'Bengalore'
 
 }
 console.log(place1);
+
+show1()
