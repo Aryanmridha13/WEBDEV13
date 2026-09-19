@@ -58,6 +58,8 @@ show()
 
 // if im initi a variable using var inside the function can i access the same variable inside the block
 // it is not possible
+// it is not possible
+// it is not possible
 
 function show1(){
 var place1 = 'Bengalore'
