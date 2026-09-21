@@ -17,3 +17,14 @@ delete movies[7]
 console.log(movies);
 console.log(movies[7]);
 
+let details = {
+    Name : "harsh",
+    des:"xcutiya",
+    stat:'single',
+    cont:78900983435,
+    isActive:true
+}
+
+console.log(details.Name);
+console.log(details.des);
+console.log(details.cont);
