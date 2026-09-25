@@ -39,7 +39,11 @@ let a = 3
 console.log(a&&=2);
 
 
+let r = 10
+console.log(r/=2);
 
+
+ 
 
 
 
