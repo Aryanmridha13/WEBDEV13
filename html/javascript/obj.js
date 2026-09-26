@@ -6,6 +6,14 @@ let personalDetails = {
     contect : 9484739472,
     isActive : true
 }
+let personalDetails1 = {
+    name : 'Nitin',
+    age : 23 ,
+    address : ' BTM Layout',
+    gender : 'M',
+    contect : 9484739472,
+    isActive : true
+}
 
 console.log(personalDetails);
 console.log(typeof(personalDetails));
