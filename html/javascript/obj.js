@@ -22,6 +22,8 @@ console.log(typeof(personalDetails));
 
 personalDetails.email = 'aryan123@gmail.com'
 console.log(personalDetails);
+console.log(personalDetails);
+console.log(personalDetails);
 
 
 // update 
