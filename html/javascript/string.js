@@ -54,3 +54,5 @@ console.log(persnol.split('$',5)); //[ "my-name-is-ashish-i'm-22year-old" ]
 
 
 
+
+
