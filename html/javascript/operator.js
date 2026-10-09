@@ -1,68 +1,55 @@
-// arithematic operator
+// Arithmetic operators are used to perform mathematical calculations.
+// Example:
 // let a = 10
 // let b = 20
 
+// console.log(a + b);  // Addition
+// console.log(a - b);  // Subtraction
+// console.log(a * b);  // Multiplication
+// console.log(a / b);  // Division
+// console.log(a % b);  // Modulus (remainder)
+// console.log(a ** b); // Exponentiation
 
-// console.log(a + b);
-// console.log(a - b);
-// console.log(a * b);
-// console.log(a / b);
-// console.log(a % b);
-// console.log(a ** b);
-
-
+// Unary operators work on a single value.
 // let x = 5
-// console.log(--x);
-// console.log(x++);
-// console.log(++x);
-// console.log(x--);
-// console.log(++x);
-// console.log(x++);
-// console.log(x++);
-// console.log(--x);
-// console.log(++x);
+// console.log(--x); // decrement then print
+// console.log(x++); // print then increment
+// console.log(++x); // increment then print
+// console.log(x--); // print then decrement
 // console.log(x);
 
-// comperision operator
-
+// Comparison operators compare two values and return true or false.
+// They are useful in condition checks.
 let a = 10
-let b = 20 
+let b = 20
 let c = '10'
 let d = 15
 
-// console.log(a == c); //! it will only check the value not the data type
+// console.log(a == c);  // Checks only value, not type
+// console.log(a === c); // Checks both value and type
+// console.log(a != c);  // Not equal
+// console.log(a !== c); // Not equal in value or type
+// console.log(a > b);   // Greater than
+// console.log(a < c);   // Less than
 
-// console.log(a === c); //! it will check both value or data type
+// Logical operators combine conditions.
+// && = logical AND, || = logical OR, ! = logical NOT
+// console.log(a < b && a > c); // true only if both conditions are true
+// console.log(a < d || a > b); // true if any condition is true
+// console.log(!(a <= c)); // NOT operator inverts the result
+// console.log(b >= d);
 
-// console.log(a != c);
-// console.log(a !== c);
-
-
-// console.log(a>b);
-// console.log(a<c);
-
-
-// logical and(&&) logical or (||) logical not (~)
-
-// console.log(a<b && a>c);
-
-// console.log(a<d || a>b );
-
-// console.log((a<=c));
-// console.log(b>=d);
-
-
-// ternary operator 
-//  syntax = (conditon)? "state 1" : "state 2" 
-
+// Ternary operator:
+// syntax = (condition) ? "value if true" : "value if false"
 let age = 25
-let res = (age>24)? 'eligible for wedding' : 'not eligible for wedding'
+let res = (age > 24) ? 'eligible for wedding' : 'not eligible for wedding'
 console.log(res);
 
-// assigment operator
-// => = , +=,-=,*=,/=,%=,**=
+// Assignment operators assign a value to a variable.
+// Examples: =, +=, -=, *=, /=, %=, **=
+// Example: x += 5 means x = x + 5
 
-// Home work
+// Homework: practice all operators with different values and observe the output.
 
 
 
