@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <h1>POP UP METHODS</h1>
+ <button onclick="show()" >Show</button>
+
+ <button onclick="addData()">ADD</button>
+ <button onclick="removeData()" >Remove</button>
+<hr>
+
+<button onclick="addsesion()" >sesadd</button>
+
+<script>
+    // function show(){
+    //     alert('Welcome to dom')
+    // }
+    let addData = () =>{
+       let userResponse = confirm("Are want to add data ")
+       console.log(userResponse);
+       if(userResponse){
+        localStorage.setItem("username","Ashish")
+        localStorage.setItem("age",45)
+        console.log("data added sucseefuly")
+        
+       }else{
+        console.log("Data not added");
+        
+       }
+       
+    }
+
+    let removeData = () =>{
+        let userres = confirm("Are you want to remove data")
+
+        if(userres){
+            localStorage.removeItem('username')
+            localStorage.removeItem('age')
+            console.log('data remove sucsefuuly ');
+
+            
+        }else{
+            console.log('data dont removed');
+            
+        }
+    }
+
+    let addsesion= () =>{
+        let con = confirm("ADD daata")
+
+        if(con){
+            sessionStorage.setItem("name",'Aryan')
+            sessionStorage.setItem('age',21)
+        }else{
+            console.log('data not added');
+            
+        }
+    }
+
+</script>
+</body>
+</html>
