@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- getelementbyid() -->
+     <h1 onclick="change()" id="head1">PYSPIDERS</h1>
+
+
+     <script>
+        
+        let change = () =>{
+            
+            // featching the element with the help of getElementbyid()
+            let head1 = document.getElementById('head1')
+
+            // Accesing the HTML element 
+
+            console.log(head1);
+
+
+            //  Accesing the content of the head1 in console
+            console.log(head1.textContent);
+
+
+            // styling the html element with the help of js
+            head1.style.color='orange'
+
+            
+        }
+
+
+     </script>
+</body>
+</html>
