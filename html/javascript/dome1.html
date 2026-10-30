@@ -11,9 +11,42 @@
     <!-- getelementbyid() -->
      <h1 onclick="change()" id="head1">PYSPIDERS</h1>
 
+      <!-- paragraph tag  -->
+
+     <p  onclick="change1()" id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sapiente?</p>
+      
+     <!-- .value -->
+
+     <input type="text" placeholder="username" id="inpEle"  >
+     <button onclick="getUserdata()" >Get Data</button>
+     <h1>UserName :<span id="data1"></span></h1>
+    
+<hr>
+     <!-- Assigment   -->
+
+    <textarea name="" id="fbform" cols="30" rows="10" placeholder="FEEDBAKCK" ></textarea>
+    <h1>FEEDBAKCK : <strong id="showFb">  </strong> </h1>
+    <button onclick="display()" >Display</button>
+
+     <!-- getElementByClassname() -->
+
+
+
+   
+
 
      <script>
         
+// showdata
+         let display = () =>{
+         let fbform = document.getElementById('fbform').value
+         console.log(fbform);
+         
+         let showfb=document.getElementById('showFb')
+         showfb.textContent=fbform
+     }
+
+
         let change = () =>{
             
             // featching the element with the help of getElementbyid()
@@ -30,7 +63,42 @@
 
             // styling the html element with the help of js
             head1.style.color='orange'
+            head1.style.backgroundColor='black'
+            head1.style.padding='10px'
 
+
+            // changeing the content
+            head1.textContent='JSPIDERS | BTM'
+        }
+
+        let change1= () =>{
+
+            let para1 = document.getElementById('para')
+            console.log(para1.textContent);
+
+            para1.style.color='red'
+            para1.style.fontSize='20px'
+            para1.style.textTransform='uppercase'
+            para1.style.backgroundColor='yellow'
+            para1.style.padding='10px'
+            
+            para1.textContent='welcome in javascript'
+
+        }
+
+        // get userdata from input
+        let getUserdata = () =>{
+
+            // fetching the input element
+            let username = document.getElementById("inpEle").value
+            console.log(username);
+            
+            let data1 = document.getElementById('data1')
+            data1.innerHTML=username
+
+
+
+            
             
         }
 
